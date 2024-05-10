@@ -6,6 +6,12 @@
 		<title>Sign Up</title>
 		<link rel="stylesheet" href="styles.css" />
 		<script src="script.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="container">
@@ -13,15 +19,22 @@
 				<img id="bg-img" src="./images/boat-bg.jpg" />
 				<div class="logo-bg"></div>
 				<img id="logo" src="./images/logo.png" />
+				<h4 id="logo-txt">
+					Nordic <br />
+					Boat Tours
+				</h4>
 			</div>
 			<div class="right">
 				<div id="hero" class="hero">
-					<h3>Sign up to receive your free travel itinerary!</h3>
+					<h3>
+						Leading provider of rowboat tours through the scenic rivers and
+						mountains of Norway
+					</h3>
 					<br />
-					<h3>You <em>know</em> you want to</h3>
+					<h3>Sign up <em>now</em> to receive your itinerary.</h3>
 				</div>
 				<div class="form-container">
-					<h4>Let's do this!</h4>
+					<h4>Get started!</h4>
 					<form action="POST" id="sign-up">
 						<div class="form-group">
 							<div class="left-input">
@@ -46,11 +59,21 @@
 						<div class="form-group">
 							<div class="left-input">
 								<label for="password">Password</label>
-								<input type="password" name="password" id="password" />
+								<input
+									type="password"
+									minlength="8"
+									name="password"
+									id="password"
+								/>
 							</div>
 							<div class="right-input">
 								<label for="confirm">Confirm Password</label>
-								<input type="password" name="confirm" id="confirm" />
+								<input
+									type="password"
+									minlength="8"
+									name="confirm"
+									id="confirm"
+								/>
 							</div>
 						</div>
 						<div class="form-end">

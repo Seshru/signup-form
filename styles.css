@@ -39,6 +39,16 @@ h6 {
     overflow-wrap: break-word;
 }
 
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+
 .container {
     display: flex;
     justify-content: space-evenly
@@ -59,7 +69,7 @@ h6 {
 .right {
     width: 65vw;
     height: 100vh;
-    background-color: #E0D8DE;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -72,18 +82,30 @@ h6 {
     z-index: 1;
     position: absolute;
     top: 30vh;
-    opacity: 40%;
+    opacity: 20%;
 }
 
 #logo {
     z-index: 1;
-    height: 150px;
-    margin: 0 160px;
-    border-radius: 50%;
+    margin: 0 80px 0 100px;
     position: absolute;
-    top: 27vh;
+    top: 30vh;
+    height: 100px;
 }
 
+#logo-txt {
+            z-index: 1;
+            margin: 0 220px;
+            position: absolute;
+            top: 31.5vh;
+            height: 150px;
+           color: white;
+           font-size: 48px;
+           font-weight: bolder;
+           text-align: center;
+           -webkit-text-stroke: 0.5px #467481;
+           font-family: 'Norse Bold', sans-serif;
+}
 
 
 .right > div {
@@ -93,16 +115,17 @@ h6 {
 
 #hero {
     padding-top: 50px;
+    width: 50vw;
 }
 
 .form-container {
-    background-color: #7D858A;
+    background-color: rgb(235, 231, 231);
     height: 38vh;
     width: 100%;
     box-shadow: 0px 8px 5px 2px #7d858a93;
-    color: #E0D8DE;
     font-weight: bolder;
     margin-top: 20px;
+    border: 0.1px solid black;
 }
 
 label, input {
@@ -117,6 +140,7 @@ form {
     margin-top: 5px;
     gap: 5px;
     align-items: flex-start;
+    margin-left: -20px;
 }
 
 input {
@@ -131,7 +155,7 @@ input {
 .form-group {
     display: flex;
     justify-content: space-around;
-    margin: 0 50px;
+    margin: 0 30px;
 }
 
 h3, h4 {
@@ -143,35 +167,55 @@ label {
 }
 
 button {
-    background-color: #BE8152;
-    border: 1px solid #6E371B;
-    color: #E0D8DE;
+    background-color: #467481;
+    border: 1px solid #134e5e;
+    color: white;
     padding: 5px 60px;
     border-radius: 10px;
 }
 
 .form-end {
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 70px;
+    margin-left: 30px;
 }
 
 .form-end h5 {
     color: black;
     position: fixed;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .login {
-    color: #BE8152;
+    color: #467481;
+    -webkit-text-stroke: 0.3px black;
+    letter-spacing: 1.1px;
 }
 
 .login:hover {
     text-decoration: underline;
+    text-decoration-color: #4c808f;
     cursor: pointer;
 }
 
 button:hover {
     cursor: pointer;
     padding: 6px 61px 4px 61px;
-    box-shadow: 1px 1px 1px 1px #6E371B;
+    box-shadow: 1px 1px 1px 1px #467481;
 }
+
+.right > div¬ {
+    margin-left: 20px;
+}
+
+input[type="password"]:invalid {
+    border-color: red;
+    box-shadow: 2px 2px 2px red inset;
+    outline: none;
+}
+
+input:focus {
+    outline-color: none;
+    border: 1px solid #467481;
+    box-shadow: 2px 2px 2px #134e5e inset;
+}
+
