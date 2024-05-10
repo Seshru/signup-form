@@ -207,7 +207,7 @@ button:hover {
     margin-left: 20px;
 }
 
-input[type="password"]:invalid {
+input[type="password"]:invalid, .invalid, .invalid:focus {
     border-color: red;
     box-shadow: 2px 2px 2px red inset;
     outline: none;
